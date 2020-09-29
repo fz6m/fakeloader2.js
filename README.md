@@ -54,12 +54,10 @@
         FakeLoader.open(
             document.getElementById('preloading'),
             {
-                {
-                    bgColor: 'hsla(0, 100%, 100%, .8)', // 加载时背景颜色
-                    loadingColor: 'rgba(0,0,0,.4)',     // 加载图标的颜色
-                    size: '50px',                       // 加载图标的大小
-                    spinner: 'spinner4'                 // 加载图标样式
-                }
+                bgColor: 'hsla(0, 100%, 100%, .8)', // 加载时背景颜色
+                loadingColor: 'rgba(0,0,0,.4)',     // 加载图标的颜色
+                size: '50px',                       // 加载图标的大小
+                spinner: 'spinner4'                 // 加载图标样式
             }
         )
         FakeLoader.stop()
