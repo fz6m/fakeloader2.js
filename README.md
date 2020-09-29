@@ -10,7 +10,7 @@
 
 ```bash
 
-# 待撰写
+    # 待撰写
 
 ```
 
@@ -27,45 +27,43 @@
 
 ```js
 
-import fakeloader from 'fakeloader2.js'
+    import fakeloader from 'fakeloader2.js'
 
 ```
 
 ### 方法
 
 ```html
-<body>
-    <table id="fake-loading">
-        <!-- ... -->
-    </table>
-</body>
+    <body>
+        <table id="fake-loading">
+            <!-- ... -->
+        </table>
+    </body>
 
-<script>
-    // 开启
-    FakeLoader.open()
-    // 关闭
-    FakeLoader.stop()
+    <script>
+        // 开启
+        FakeLoader.open()
+        // 关闭
+        FakeLoader.stop()
 
-    // 可指定节点
-    FakeLoader.open(
-        document.body
-    )
-    FakeLoader.stop()
+        // 可指定节点
+        FakeLoader.open(document.body)
+        FakeLoader.stop()
 
-    // 可配置
-    FakeLoader.open(
-        document.getElementById('preloading'),
-        {
+        // 可配置
+        FakeLoader.open(
+            document.getElementById('preloading'),
             {
-                bgColor: 'hsla(0, 100%, 100%, .8)', // 加载时背景颜色
-                loadingColor: 'rgba(0,0,0,.4)', // 加载图标的颜色
-                size: '50px', // 加载图标的大小
-                spinner: 'spinner4' // 加载图标样式
+                {
+                    bgColor: 'hsla(0, 100%, 100%, .8)', // 加载时背景颜色
+                    loadingColor: 'rgba(0,0,0,.4)', // 加载图标的颜色
+                    size: '50px', // 加载图标的大小
+                    spinner: 'spinner4' // 加载图标样式
+                }
             }
-        }
-    )
-    FakeLoader.stop()
-</script>
+        )
+        FakeLoader.stop()
+    </script>
 ```
 
 ## 选项
