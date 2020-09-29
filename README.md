@@ -56,9 +56,9 @@
             {
                 {
                     bgColor: 'hsla(0, 100%, 100%, .8)', // 加载时背景颜色
-                    loadingColor: 'rgba(0,0,0,.4)', // 加载图标的颜色
-                    size: '50px', // 加载图标的大小
-                    spinner: 'spinner4' // 加载图标样式
+                    loadingColor: 'rgba(0,0,0,.4)',     // 加载图标的颜色
+                    size: '50px',                       // 加载图标的大小
+                    spinner: 'spinner4'                 // 加载图标样式
                 }
             }
         )
@@ -74,8 +74,8 @@
 
  * `config` ：可选，配置对象。
 
-     * `bgColor` | `hsla(0, 100%, 100%, .8)` ：加载时背景颜色。
-     * `loadingColor` | `rgba(0,0,0,.4)` ：加载图标的颜色
+     * `bgColor` | `hsla(0, 100%, 100%, .8)` ：加载背景颜色
+     * `loadingColor` | `rgba(0,0,0,.4)` ：加载图标颜色
      * `size` | `50px` ：加载图标大小
      * `spinner` | `spinner4`  ：支持 `spinner1` ~ `spinner7` 多种加载动画
 
@@ -88,7 +88,8 @@
 
 ## 注意
 
-目前不支持多节点加载，只能 loading 一个节点。
+1. 目前不支持多节点加载，只能 loading 一个节点。
+2. 无论有无指定 `fake-loading` 类，被预加载的节点会由 `fake-loading` 带来 `position: relative;` 定位，这是为了使遮罩可以正确铺满该节点，请留意。
 
 ## 原项目
 
