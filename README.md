@@ -35,7 +35,7 @@
 
 ```html
     <body>
-        <table id="fake-loading">
+        <table class="fake-loading">
             <!-- ... -->
         </table>
     </body>
