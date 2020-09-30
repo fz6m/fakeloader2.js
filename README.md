@@ -1,6 +1,6 @@
 # fakeloader2.js
 
-*Version: 1.0*
+*Version: 1.1*
 
 页面加载 loading 动画插件库，支持单节点部分进行预加载。
 
@@ -20,7 +20,7 @@
     <!-- 本地 -->
     <script src="./dist/fakeloader2.min.js"></script>
     <!-- CDN -->
-    <script src="https://cdn.jsdelivr.net/gh/fz6m/fakeloader2.js@1.0/dist/fakeloader2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fz6m/fakeloader2.js@1.1/dist/fakeloader2.min.js"></script>
 ```
 
 或
@@ -52,7 +52,7 @@
 
         // 可配置
         FakeLoader.open(
-            document.getElementById('preloading'),
+            document.getElementById('preloading')[0],
             {
                 bgColor: 'hsla(0, 100%, 100%, .8)', // 加载时背景颜色
                 loadingColor: 'rgba(0,0,0,.4)',     // 加载图标的颜色
@@ -87,6 +87,7 @@
 ## 注意
 
 1. 目前不支持多节点加载，只能 loading 一个节点。
+
 2. 无论有无指定 `fake-loading` 类，被预加载的节点会由 `fake-loading` 带来 `position: relative;` 定位，这是为了使遮罩可以正确铺满该节点，请留意。
 
 ## 原项目

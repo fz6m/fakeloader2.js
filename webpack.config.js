@@ -22,21 +22,24 @@ module.exports = {
       exclude: /node_modules/
     },
     {
-      test: /\.css$/,
+      test: /\.((c|sa|sc)ss)$/,
       exclude: /node_modules/,
       use: [
       {
-        loader: 'style-loader',
+        loader: "style-loader",
       },
       {
-        loader: 'css-loader',
+        loader: "css-loader",
         options: {
-          importLoaders: 1,
-        }
+          importLoaders: 2,
+        },
       },
       {
-        loader: 'postcss-loader'
-      }]
+        loader: "postcss-loader",
+      },
+      {
+        loader: "sass-loader",
+      }],
     }]
   },
   optimization: {

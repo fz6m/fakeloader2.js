@@ -54,6 +54,7 @@ const FakeLoader = {
   },
 
   stop: (callback) => {
+    if(!FakeLoader._node) return
     FakeLoader._node.style.opacity = 0
     setTimeout(() => {
       FakeLoader._el.removeChild(FakeLoader._node)

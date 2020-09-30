@@ -237,7 +237,7 @@
   background-color: var(--color);
   height: 100%;
   width: 5px;
-  margin-left: 2px;
+  margin: 0 1px;
   display: inline-block;
   animation: stretchdelay 1.2s infinite ease-in-out;
 }
@@ -279,7 +279,7 @@
   margin-right: 2.5px;
   border-radius: 50%;
   display: inline-block;
-  animation: stretchdelay 0.7s infinite ease-in-out;
+  animation: stretchdelay 0.9s infinite ease-in-out;
 }
 
 .spinner7 .circ2 {
@@ -300,9 +300,9 @@
 
 @keyframes stretchdelay {
   0%, 40%, 100% {
-    transform: translateY(-10px);
+    transform: translateY(0px);
   }
   20% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }

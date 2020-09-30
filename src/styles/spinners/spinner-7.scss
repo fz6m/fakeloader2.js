@@ -20,7 +20,7 @@ $rawWidth: calc(#{$size} + #{$margin});
   border-radius: 50%;
   display: inline-block;
 
-  animation: stretchdelay 0.7s infinite ease-in-out;
+  animation: stretchdelay 0.9s infinite ease-in-out;
 }
 
 .spinner7 .circ2 {
@@ -45,10 +45,10 @@ $rawWidth: calc(#{$size} + #{$margin});
   0%,
   40%,
   100% {
-    transform: translateY(-10px);
+    transform: translateY(0px);
   }
 
   20% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }
