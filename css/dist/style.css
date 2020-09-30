@@ -9,6 +9,10 @@ body {
   user-select: none;
 }
 
+h1 {
+  font-family: "Josefin Sans";
+}
+
 .align-item {
   width: 100%;
   height: 100%;
