@@ -82,7 +82,7 @@ table th {
   left: -4000px;
   width: 8000px;
   height: 8000px;
-  background: url("../../static/bg.png") left top repeat;
+  background: url("https://cdn.jsdelivr.net/gh/fz6m/fakeloader2.js@gh-pages/static/bg.png") left top repeat;
   z-index: -1;
   -webkit-animation: infinitescroll 10s linear infinite;
   -moz-animation: infinitescroll 10s linear infinite;
