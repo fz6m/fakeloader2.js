@@ -6,11 +6,17 @@
 
 ## 使用
 
-### 安装
+### npm
 
 ```bash
+    npm i fakeloader2.js
+    # 或
+    yarn add fakeloader2.js
+```
 
-    # 待撰写
+```js
+
+    import FakeLoader from 'fakeloader2.js'
 
 ```
 
@@ -21,14 +27,6 @@
     <script src="./dist/fakeloader2.min.js"></script>
     <!-- CDN -->
     <script src="https://cdn.jsdelivr.net/gh/fz6m/fakeloader2.js@1.1/dist/fakeloader2.min.js"></script>
-```
-
-或
-
-```js
-
-    import fakeloader from 'fakeloader2.js'
-
 ```
 
 ### 方法
