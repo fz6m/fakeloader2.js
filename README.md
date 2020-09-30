@@ -4,6 +4,10 @@
 
 页面加载 loading 动画插件库，支持单节点部分进行预加载。
 
+## 示例
+
+[在线演示](https://fz6m.github.io/fakeloader2.js/)
+
 ## 使用
 
 ### npm
