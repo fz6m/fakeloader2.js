@@ -110,8 +110,8 @@
         FakeLoader.open(this.$refs.el)
         
         setTimeout(() => {
-        // 模拟异步操作
-        FakeLoader.stop()
+            // 模拟异步操作
+            FakeLoader.stop()
         }, 3000)
 
         // 组件
