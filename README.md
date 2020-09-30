@@ -86,6 +86,41 @@
 
  * `callback` ：关闭加载后的回调函数。
 
+
+## Vue.js example
+
+```html
+    <template>
+        <div ref="el" class="home">
+            <img alt="Vue logo" src="../assets/logo.png">
+            <HelloWorld ref="loading" msg="Welcome to Your Vue.js App"/>
+        </div>
+    </template>
+
+    <script>
+    import HelloWorld from '@/components/HelloWorld.vue'
+    // 引入
+    import FakeLoader from 'fakeloader2.js'
+
+    export default {
+    name: 'Home',
+    components: { HelloWorld },
+    mounted () {
+        // 单节点
+        FakeLoader.open(this.$refs.el)
+        
+        setTimeout(() => {
+        // 模拟异步操作
+        FakeLoader.stop()
+        }, 3000)
+
+        // 组件
+        FakeLoader.open(this.$refs.loading.$el)
+    }
+    }
+    </script>
+```
+
 ## 注意
 
 1. 目前不支持多节点加载，只能 loading 一个节点。
