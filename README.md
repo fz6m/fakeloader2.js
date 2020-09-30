@@ -52,7 +52,7 @@
 
         // 可配置
         FakeLoader.open(
-            document.getElementById('preloading')[0],
+            document.getElementById('fake-loading')[0],
             {
                 bgColor: 'hsla(0, 100%, 100%, .8)', // 加载时背景颜色
                 loadingColor: 'rgba(0,0,0,.4)',     // 加载图标的颜色
